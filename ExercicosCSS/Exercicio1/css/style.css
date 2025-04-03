@@ -1,0 +1,48 @@
+body, h3, p {
+    margin: 0;
+    padding: 0;
+}
+/*produto */
+.produto {
+    max-width: 300px;
+    max-height: 500px;
+    margin: 15px;
+}
+/*cartão */
+.cartao {
+    background-color: rgb(207, 207, 207);
+    border-radius: 15px;
+    height: 500px;
+}
+
+.cartao:hover{
+    background-color: #6C757D ;
+    box-shadow: 2px 2px 4px #000;
+
+}
+
+/*conteudo*/
+.conteudo img{
+    border-radius: 15px;
+    margin: 5px;
+    width: 290px;
+    height: 250px;
+}
+.conteudo h3, p, span, button {
+    margin: 5px;
+    font-family: 'roboto';
+}
+
+.conteudo button {
+    border-radius: 15px;
+    background-color: #FFA500;
+    border-style: none;
+}
+.conteudo span {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: #F5F5DC;
+}
