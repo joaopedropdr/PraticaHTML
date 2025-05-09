@@ -1,0 +1,81 @@
+
+/*navbar */
+.navbar h1{
+    font-family: 'sora';
+    font-weight: bold;
+    font-size: 24px;
+    padding-block: 16px;
+
+}
+ul, li, a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'sora';
+    padding-block: 16px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 70px;
+    z-index: 2;
+}
+
+.componentes{
+    display: flex;
+    gap: 32px;
+
+}
+
+/*Menu hamburguer */
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;     
+    border-top: 3px solid #fff;
+    cursor: pointer;   
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+}
+
+
+/*Responsividade para celular */
+
+@media (max-width: 750px) {
+    .hamburguer{
+        display: block;
+    }
+
+    .componentes{
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 70px);
+        background-color: #000;
+        transition: 0.8s ease-in-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        z-index: 1;
+    }
+
+    .componentes.ativo{
+        display: flex;
+    }
+
+
+}
