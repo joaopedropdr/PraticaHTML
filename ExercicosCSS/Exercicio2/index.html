@@ -6,16 +6,15 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="js/script.js"></script>
     <title>Exercicio 2</title>
 </head>
 <body>
-    <nav class="navegacao">
+    <nav>
         <div class="navbar">
-            <button class="hamburguer ativo" aria-label="Abrir menu"></button>
+            <button class="hamburguer" id="hamburguer" onclick="clikMenu()" aria-label="Abrir menu"></button>
             <h1><a href="#">João Pedro</a></h1>
 
-            <ul class="componentes">
+            <ul class="componentes" id="componentes">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Trabalhos</a></li>
@@ -23,6 +22,9 @@
         </div>
 
     </nav>
+
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

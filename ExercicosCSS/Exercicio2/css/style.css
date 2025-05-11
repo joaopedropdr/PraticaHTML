@@ -22,7 +22,7 @@ ul, li, a{
     flex-wrap: wrap;
     background-color: black;
     height: 70px;
-    z-index: 2;
+    
 }
 
 .componentes{
@@ -37,7 +37,7 @@ ul, li, a{
     border: none;
     background: none;     
     border-top: 3px solid #fff;
-    cursor: pointer;   
+    cursor: pointer;  
 }
 
 .hamburguer::before,
@@ -56,9 +56,19 @@ ul, li, a{
 @media (max-width: 750px) {
     .hamburguer{
         display: block;
+      
     }
 
     .componentes{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+        
+
+    .comp-ativo .componentes{
+        display: flex;
         position: fixed;
         top: 70px;
         left: 0;
@@ -70,12 +80,6 @@ ul, li, a{
         justify-content: space-around;
         align-items: center;
         gap: 0;
-        z-index: 1;
     }
-
-    .componentes.ativo{
-        display: flex;
-    }
-
 
 }

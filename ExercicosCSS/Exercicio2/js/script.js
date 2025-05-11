@@ -1,8 +1,8 @@
-const botao = document.querySelector(".hamburguer");
-const menu = document.querySelector(".componentes");
+document.addEventListener('DOMContentLoaded', function (){
+    const botaoburguer = document.getElementById('hamburguer')
 
-botao.addEventListener("click", () => {
-    navbar.classList.toggle("ativo");
+    botaoburguer.addEventListener('click', function clickMenu() {
+        document.body.classList.toggle('comp-ativo');
+    });
+
 });
-
- 
